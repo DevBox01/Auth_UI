@@ -48,7 +48,14 @@ class RoundedActionBouton extends StatelessWidget {
             borderRadius: const BorderRadius.all(Radius.circular(50.0)),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [Text(text), const SizedBox(width: 5), Icon(icon)],
+              children: [
+                Text(
+                  text,
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(width: 5),
+                Icon(icon)
+              ],
             )),
       ),
     );

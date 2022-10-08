@@ -23,7 +23,7 @@ class AlreadyHaveAnAccountCheck extends StatelessWidget {
             press();
           },
           child: Text(
-            login ? "Sign Up" : "Sign In",
+            login ? "Register" : "Login",
             // ignore: prefer_const_constructors
             style: TextStyle(
               color: pickerColor,
