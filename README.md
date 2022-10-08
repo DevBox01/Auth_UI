@@ -16,7 +16,7 @@ A few resources to get you started if this is your first Flutter project:
 -(https://github.com/DevBox01/Auth_UI/blob/master/4.png)
 -(https://github.com/DevBox01/Auth_UI/blob/master/5.png)
 -(https://github.com/DevBox01/Auth_UI/blob/master/6.png)
--![Alt text]([http://full/path/to/img.jpg](https://github.com/DevBox01/Auth_UI/blob/master/6.png) "Optional title")
+![Alt text]([http://full/path/to/img.jpg](https://github.com/DevBox01/Auth_UI/blob/master/6.png) "Optional title")
 
 
 For help getting started with Flutter development, view the
