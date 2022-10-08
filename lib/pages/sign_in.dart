@@ -1,4 +1,5 @@
 import 'package:auth_ui/helper/helper.dart';
+import 'package:auth_ui/utils/background.dart';
 import 'package:flutter/material.dart';
 
 class SignIn extends StatefulWidget {
@@ -12,11 +13,13 @@ class _SignInState extends State<SignIn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: loginAuthUI(
-      context,
-      onPressed: () => setState(() {
-        isObscure = !isObscure;
-      }),
-    ));
+        body: Background(
+            image: authHeaderImage(context, isloginPage: true),
+            child: loginAuthUI(
+              context,
+              onPressed: () => setState(() {
+                isObscure = !isObscure;
+              }),
+            )));
   }
 }

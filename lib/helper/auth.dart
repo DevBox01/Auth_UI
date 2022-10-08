@@ -10,16 +10,26 @@ Widget loginAuthUI(
   BuildContext context, {
   VoidCallback? onPressed,
 }) {
-  final logFormKey = GlobalKey<FormState>();
   return SingleChildScrollView(
     child: Form(
-      key: logFormKey,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          //Sign In Header image
-          authHeaderImage(context, isloginPage: true),
+          const SizedBox(height: 130),
+          //Page title
+          Padding(
+            padding: EdgeInsets.only(
+                left: 0, right: MediaQuery.of(context).size.width - 120),
+            child: const Text(
+              "Sign In",
+              style: TextStyle(
+                  fontSize: 23,
+                  fontWeight: FontWeight.bold,
+                  fontStyle: FontStyle.italic),
+            ),
+          ),
           //Email
+          const SizedBox(height: 10),
           textInputWidget(context,
               textInputAction: TextInputAction.next,
               hintText: 'Email ID',
@@ -35,11 +45,6 @@ Widget loginAuthUI(
             textInputAction: TextInputAction.go,
             hintText: 'Password',
             prefixIcon: CupertinoIcons.lock,
-            suffixIcon: GestureDetector(
-              child: const Icon(
-                CupertinoIcons.eye,
-              ),
-            ),
           ),
           RoundedActionBouton(
             onPressed: () {},
@@ -70,15 +75,25 @@ Widget signupAuthUI(
   BuildContext context, {
   VoidCallback? onPressed,
 }) {
-  final regFormKey = GlobalKey<FormState>();
   return SingleChildScrollView(
     child: Form(
-      key: regFormKey,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          //Sign In Header image
-          authHeaderImage(context, isloginPage: false),
+          const SizedBox(height: 120),
+          //Page Tilte
+          Padding(
+            padding: EdgeInsets.only(
+                left: 0, right: MediaQuery.of(context).size.width - 120),
+            child: const Text(
+              "Sign Up",
+              style: TextStyle(
+                  fontSize: 23,
+                  fontWeight: FontWeight.bold,
+                  fontStyle: FontStyle.italic),
+            ),
+          ),
+          const SizedBox(height: 5),
           //Email
           textInputWidget(context,
               textInputAction: TextInputAction.next,
@@ -104,16 +119,11 @@ Widget signupAuthUI(
             textInputAction: TextInputAction.go,
             hintText: 'Password',
             prefixIcon: CupertinoIcons.lock,
-            suffixIcon: GestureDetector(
-              child: const Icon(
-                CupertinoIcons.eye,
-              ),
-            ),
           ),
           RoundedActionBouton(
             onPressed: () {},
-            text: 'Sign In',
-            icon: Icons.arrow_right_alt,
+            text: 'Sign Up ',
+            icon: CupertinoIcons.arrow_left,
           ),
           const SizedBox(height: 10),
           AlreadyHaveAnAccountCheck(
@@ -122,8 +132,8 @@ Widget signupAuthUI(
               Navigator.push(
                   context,
                   PageTransition(
-                    type: PageTransitionType.leftToRightWithFade,
-                    child: const SignUp(),
+                    type: PageTransitionType.rightToLeftWithFade,
+                    child: const SignIn(),
                     duration: const Duration(milliseconds: 600),
                   ));
             },

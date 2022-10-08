@@ -1,1 +1,1 @@
-bool isObscure = true;
+bool isObscure = false;

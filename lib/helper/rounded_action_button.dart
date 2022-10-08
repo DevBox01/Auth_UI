@@ -7,9 +7,9 @@ class RoundedActionBouton extends StatelessWidget {
     Key? key,
     required this.text,
     this.onPressed,
-    required this.icon,
+    this.icon,
   }) : super(key: key);
-  final IconData icon;
+  final IconData? icon;
   final String text;
   final VoidCallback? onPressed;
   @override

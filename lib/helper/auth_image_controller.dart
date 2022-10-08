@@ -7,6 +7,6 @@ Widget authHeaderImage(BuildContext context, {bool isloginPage = true}) {
   return SvgPicture.asset(
     isloginPage ? '$assetName/Login.svg' : '$assetName/signup.svg',
     semanticsLabel: 'Header image',
-    width: isloginPage ? size.width - 135 : size.width - 150,
+    width: size.width * 0.35,
   );
 }
