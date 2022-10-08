@@ -68,7 +68,7 @@ class _WelcomeState extends State<Welcome> {
                     duration: const Duration(seconds: 1),
                     alignment: Alignment.bottomLeft,
                     child: const SignIn())),
-            text: 'LOGIN',
+            text: 'START',
           ),
           const SizedBox(height: 20)
         ],
