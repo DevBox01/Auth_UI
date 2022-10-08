@@ -13,11 +13,4 @@ A few resources to get you started if this is your first Flutter project:
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 samples, guidance on mobile development, and a full API reference.
 - [Lab: App Screenshot]
-![ScreenShot](https://github.com/DevBox01/Auth_UI/blob/master/screenShot1.png)
-![ScreenShot](https://github.com/DevBox01/Auth_UI/blob/master/screenShot2.png)
-![ScreenShot](https://github.com/DevBox01/Auth_UI/blob/master/screenShot3.png)
-![ScreenShot](https://github.com/DevBox01/Auth_UI/blob/master/screenShot4.png)
-![ScreenShot](https://github.com/DevBox01/Auth_UI/blob/master/screenShot5.png)
-![ScreenShot](https://github.com/DevBox01/Auth_UI/blob/master/screenShot6.png)
-![ScreenShot](https://github.com/DevBox01/Auth_UI/blob/master/screenShot7.png)
-![ScreenShot](https://github.com/DevBox01/Auth_UI/blob/master/screenShot8.png)
+
