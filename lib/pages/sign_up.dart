@@ -12,17 +12,11 @@ class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Form(
-          child: authUI(
-            context,
-            onPressed: () => setState(() {
-              isObscure = !isObscure;
-            }),
-            isTrue: false,
-            isSignUp: true,
-          ),
-        ),
+      body: signupAuthUI(
+        context,
+        onPressed: () => setState(() {
+          isObscure = !isObscure;
+        }),
       ),
     );
   }
