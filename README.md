@@ -1,4 +1,4 @@
-# auth_ui
+# Auth UI
 
 ## Getting Started
 
